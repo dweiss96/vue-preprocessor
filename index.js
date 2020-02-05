@@ -10,6 +10,13 @@ module.exports = {
 
     const scriptContent = Parser.extractScriptContent(script, filePath);
 
-    return transformationManager['default'](scriptContent, filePath, render, staticRenderFns);
+    if(script) {
+      if(script.lang) {
+        if(script.lang === 'ts' || script.lang === 'typescript') {
+          return transformationManager.ts().run(scriptContent, filePath, render, staticRenderFns);
+        }
+      }
+    }
+    return transformationManager.default().run(scriptContent, filePath, render, staticRenderFns);
   },
 };

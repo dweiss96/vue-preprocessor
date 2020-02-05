@@ -35,11 +35,13 @@
     "eslint": "6.6.0",
     "jest": "24.9.0",
     "pug": "2.0.4",
+    "typescript": "^3.7.5",
     "vue": "2.6.10",
     "vue-template-compiler": "2.6.10",
     "vue-template-es2015-compiler": "1.9.1"
   },
   "peerDependencies": {
+    "typescript": "*",
     "vue-template-compiler": "2.6.x",
     "vue-template-es2015-compiler": "1.9.x"
   },
