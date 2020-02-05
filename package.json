@@ -6,10 +6,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BigBl4ckW0lf/vue-preprocessor.git"
+    "url": "https://github.com/dweiss96/vue-preprocessor.git"
   },
   "bugs": {
-    "url": "https://github.com/BigBl4ckW0lf/vue-preprocessor/issues"
+    "url": "https://github.com/dweiss96/vue-preprocessor/issues"
   },
   "author": "Daniel Weiß <96er.daniel.weiss@gmail.com>",
   "engines": {
