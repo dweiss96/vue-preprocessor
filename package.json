@@ -1,0 +1,68 @@
+{
+  "name": "vue-preprocessor",
+  "version": "0.0.1-rc1",
+  "description": "Preprocessor that enables jest to load .vue files",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BigBl4ckW0lf/vue-preprocessor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BigBl4ckW0lf/vue-preprocessor/issues"
+  },
+  "author": "Daniel Weiß <96er.daniel.weiss@gmail.com>",
+  "engines": {
+    "node": ">= 8.16"
+  },
+  "keywords": [
+    "jest",
+    "vue",
+    "test",
+    "preprocessor",
+    "transform"
+  ],
+  "dependencies": {
+    "babel-plugin-transform-runtime": "6.23.0",
+    "find-babel-config": "1.2.0",
+    "vue-property-decorator": "8.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
+    "@babel/template": "7.8.3",
+    "babel-jest": "24.9.0",
+    "eslint": "6.6.0",
+    "jest": "24.9.0",
+    "pug": "2.0.4",
+    "vue": "2.6.10",
+    "vue-template-compiler": "2.6.10",
+    "vue-template-es2015-compiler": "1.9.1"
+  },
+  "peerDependencies": {
+    "vue-template-compiler": "2.6.x",
+    "vue-template-es2015-compiler": "1.9.x"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/test/resources/**/*.{js,vue}"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^test/resources/(.*)": "<rootDir>/test/resources/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.vue$": "<rootDir>/index.js"
+    }
+  }
+}
