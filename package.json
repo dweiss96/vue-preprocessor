@@ -1,6 +1,6 @@
 {
   "name": "vue-preprocessor",
-  "version": "0.0.1-rc1",
+  "version": "0.0.1",
   "description": "Preprocessor that enables jest to load .vue files",
   "main": "index.js",
   "license": "MIT",
