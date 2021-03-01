@@ -34,7 +34,7 @@
     "babel-jest": "24.9.0",
     "eslint": "6.6.0",
     "jest": "24.9.0",
-    "pug": "2.0.4",
+    "pug": "3.0.2",
     "typescript": "3.7.5",
     "vue": "2.6.10",
     "vue-template-compiler": "2.6.10",
